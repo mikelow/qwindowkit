@@ -118,6 +118,7 @@ if(NOT TARGET qmsetup::library)
     set(_package_path)
     qm_install_package(qmsetup
         SOURCE_DIR ${_source_dir}
+        CMAKE_PACKAGE_SUBDIR lib/cmake/qmsetup
         BUILD_TYPE Release
         RESULT_PATH _package_path
     )
